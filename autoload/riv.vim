@@ -355,8 +355,8 @@ fun! riv#buf_load_aug() "{{{
             au! WinLeave,BufWinLeave     <buffer>  2match none
         endif "}}}
         au  WinLeave,BufWinLeave     <buffer>  call riv#file#update()
-        au! BufWritePost <buffer>  call riv#fold#update() 
-        au  BufWritePost <buffer>  call riv#todo#update()
+        "au! BufWritePost <buffer>  call riv#fold#update() 
+        "au  BufWritePost <buffer>  call riv#todo#update()
         au! BufWritePre  <buffer>  call riv#create#auto_mkdir()
     aug END "}}}
 endfun "}}}
